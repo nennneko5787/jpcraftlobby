@@ -1,0 +1,13 @@
+main: com.nennneko5787.jpcraft.JPCraftLobbyPluginMain
+name: JPCraftLobby
+version: ${version}
+description: JPCraftのロビーのプラグイン。
+api-version: '1.16'
+authors: [nennneko5787]
+commands:
+  jpcraft.lobby:
+    aliases: [ jplobby ]
+    description: Command description
+    permission: jpcraft.lobby.admin
+    permission-message: §cYou don't have permission / あなたは権限を持っていません
+    usage: /(jpcraft.lobby|jplobby) [(reload|mute <player>|unmute <player>)]

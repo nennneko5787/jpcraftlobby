@@ -1,0 +1,22 @@
+name: Maven Clean Install
+
+on:
+  push:
+    branches:
+      - main  # マスターブランチにプッシュされた場合にトリガー
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository  # リポジトリのチェックアウト
+      uses: actions/checkout@v2
+
+    - name: Set up JDK  # JDKのセットアップ
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'  # Mavenが必要とするJDKのバージョンを指定
+
+    - name: Build with Maven  # Mavenによるビルド
+      run: mvn clean install

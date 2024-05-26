@@ -3,7 +3,7 @@ name: Maven Clean Install
 on:
   push:
     branches:
-      - main  # マスターブランチにプッシュされた場合にトリガー
+      - master  # マスターブランチにプッシュされた場合にトリガー
 
 jobs:
   build:

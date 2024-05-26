@@ -23,7 +23,7 @@ jobs:
       run: mvn clean install
 
     - name: filelist
-      run: ls -a
+      run: ls target -a
 
     - name: Archive artifacts
       uses: actions/upload-artifact@v2

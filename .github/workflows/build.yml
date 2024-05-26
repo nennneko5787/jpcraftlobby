@@ -28,5 +28,5 @@ jobs:
     - name: Archive artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: jpcraftlobby-0.2-ALPHA
+        name: jpcraftlobby-0.2-ALPHA.jar
         path: target/jpcraftlobby-0.2-ALPHA.jar  # 成果物のパスを指定します

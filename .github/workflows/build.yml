@@ -29,4 +29,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: jpcraftlobby-v0.2-ALPHA
-        path: /target/jpcraftlobby-v0.2-ALPHA.jar  # 成果物のパスを指定します
+        path: /target/jpcraftlobby-0.2-ALPHA.jar  # 成果物のパスを指定します
